@@ -1,0 +1,53 @@
+<!--logs.wxml-->
+
+  <view id="blocker1"></view>
+  <image src="blue.png" mode="aspectFit" class="images" style="top:10rpx"></image>
+  <view class="dot-container" style="top:100rpx;">
+    <view style="color:yellow;position:fixed;left:100rpx">{{boardText[0]}}</view>
+    <view style="color:yellow;position:fixed;right:100rpx">{{boardText[1]}}</view>
+    <view animation="{{animationData}}" class="rolling-text" style="top:150rpx">
+      {{boardText[2]}}
+    </view>
+    <view style="color:yellow;top:200rpx;position:fixed;left:100rpx">{{boardText[3]}}</view>
+    <view style="color:yellow;top:200rpx;position:fixed;right:100rpx">{{boardText[4]}}</view>
+    <view animation="{{animationData}}" class="rolling-text" style="top:250rpx">
+      {{boardText[5]}}
+    </view>
+  </view>
+  <image src="red.png" mode="aspectFit" class="images" style="top:310rpx"></image>
+  <view class="dot-container" style="top:400rpx;">
+    <view style="color:yellow;position:fixed;left:100rpx">{{boardText[6]}}</view>
+    <view style="color:yellow;position:fixed;right:100rpx">{{boardText[7]}}</view>
+    <view animation="{{animationData}}" class="rolling-text" style="top:450rpx">
+      {{boardText[8]}}
+    </view>
+    <view style="color:yellow;top:500rpx;position:fixed;left:100rpx">{{boardText[9]}}</view>
+    <view style="color:yellow;top:500rpx;position:fixed;right:100rpx">{{boardText[10]}}</view>
+    <view animation="{{animationData}}" class="rolling-text" style="top:550rpx">
+      {{boardText[11]}}
+    </view>
+  </view>
+
+  <image src="green.png" mode="aspectFit" class="images" style="top:610rpx"></image>
+  <view class="dot-container" style="top:700rpx;">
+    <view style="color:yellow;position:fixed;left:100rpx">{{boardText[12]}}</view>
+    <view style="color:yellow;position:fixed;right:100rpx">{{boardText[13]}}</view>
+    <view animation="{{animationData}}" class="rolling-text" style="top:750rpx">
+      {{boardText[14]}}
+    </view>
+    <view style="color:yellow;top:800rpx;position:fixed;left:100rpx">{{boardText[15]}}</view>
+    <view style="color:yellow;top:800rpx;position:fixed;right:100rpx">{{boardText[16]}}</view>
+    <view animation="{{animationData}}" class="rolling-text" style="top:850rpx">
+      {{boardText[17]}}
+    </view>
+  </view>
+
+  <!--<view class="dot-container">
+    <view animation="{{animationData}}" class="rolling-text">
+      {{boardText[1]}}
+    </view>
+  </view>-->
+
+  <view id="blocker2"></view>
+
+

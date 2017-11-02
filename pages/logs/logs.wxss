@@ -1,0 +1,50 @@
+
+.log-item {
+  margin: 10rpx;
+}
+
+.dot-container {
+  position: fixed;
+  width: 600rpx;
+  height: 200rpx;
+  left: 75rpx;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.rolling-text {
+  position:fixed;
+  width: 10000rpx;
+  height: 50rpx;
+  left: 700rpx;
+  font-family: monospace;
+  font-weight: 900;
+  color: yellow;
+}
+
+#blocker1 {
+  position: fixed;
+  height: 1000rpx;
+  width:75rpx;
+  left: 0rpx;
+  top:0rpx;
+  background-color: white;
+  z-index: 5;
+}
+
+#blocker2 {
+  position: fixed;
+  height: 1000rpx;
+  width:75rpx;
+  right: 0rpx;
+  top:0rpx;
+  background-color: white;
+  z-index: 5;
+}
+
+.images {
+  position: fixed;
+  height: 75rpx;
+  width: 300rpx;
+  left: 75rpx;
+}

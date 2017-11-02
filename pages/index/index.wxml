@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<!--<audio src="http://qqma.tingge123.com:823/mp3/2017-08-25/1503656214.mp3" id="myAudio"></audio>-->
+<view class="container">
+  <view class="userinfo" animation="{{fadingAnimation}}">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" hidden="true"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="loc.png" background-size="cover"></image>
+    </block>
+  </view>
+  <text class="usermotto" animation="{{fadingAnimation}}">{{motto}}</text>
+  <view class="divider" bindtap="fastEntry" animation="{{fadingAnimation}}">
+  </view>
+  <view class="border" animation="{{fadingAnimation}}">
+    <input placeholder="位置错了？点这里输入" class="input-box" bindinput='bindInput'></input>
+    
+    <button id="button0" class="hint-button" animation="{{animationData}}" bindtap="bindButtonTap" data-variable="{{text1}}">{{text1}}</button>
+    <button id="button1" class="hint-button" animation="{{animationData}}" bindtap="bindButtonTap" data-variable="{{text2}}">{{text2}}</button>
+    <button id="button2" class="hint-button" animation="{{animationData}}" bindtap="bindButtonTap" data-variable="{{text3}}">{{text3}}</button>
+    <button id="button3" class="hint-button" animation="{{animationData}}">{{text4}}</button>
+  </view>
+  <image src="cake.jpg" style="position:fixed;top:0;height:1000rpx;width:750rpx;opacity:0.0;z-index:-5" mode="aspectFit" animation="{{appearAnimation}}"></image>
+  <image src="refresh.jpg" style="position:fixed;right:80rpx;top:1000rpx;height:50rpx;width:50rpx;opacity:0.0;z-index:-2" mode="aspectFit" animation="{{appearAnimation}}" bindtap="recover"></image>
+  <view style="z-index:-4">
+  <text style="position:fixed;width:500rpx;top:75rpx;right:20rpx;opacity:0" animation="{{animation1}}">虽然生活总有不如意的时候</text>
+  <text style="position:fixed;width:500rpx;top:75rpx;right:20rpx;opacity:0" animation="{{animation2}}">但正如人之不如意十之八九</text>
+  <text style="position:fixed;width:500rpx;top:75rpx;right:20rpx;opacity:0" animation="{{animation3}}">要常记一二！</text>
+  <text style="position:fixed;width:500rpx;top:75rpx;right:20rpx;opacity:0" animation="{{animation4}}">总之笑起来最好看啦</text>
+  </view>
+  <image src="card.jpeg" style="position:fixed;right:-20rpx;top:10rpx;height:1000rpx;width:800rpx;opacity:1.0;z-index:-3;opacity:0" mode="aspectFit" animation="{{imageAnimation}}"></image>
+</view>
