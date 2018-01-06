@@ -1,2 +1,2 @@
 # StockholmMetroTime
-![image](https://github.com/ButBueatiful/dotvim/raw/master/screenshots/vim-screenshot.jpg)
+![image](https://github.com/WangZesen/StockholmMetroTime/blob/master/sample1.jpg)
